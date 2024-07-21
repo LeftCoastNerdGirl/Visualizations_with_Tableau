@@ -1,5 +1,7 @@
 # Data Visualizations with Tableau
 
+View dashboards and storyboard here: https://public.tableau.com/views/Module8Challenge-CitiBikeAnalysisv5/CohortBasedObservations?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+
 The abiity to determine what data tells the story and how to visualize that story is key to data analytics.  
 
 For this project, the students used Tableau as the data visualization tool. The following is a list of key questions to consider when preparing the workbook:  
