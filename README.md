@@ -36,7 +36,9 @@ I chose to use data from June of each year, 2013-2020, to analyze year over year
 
 # Cohort Based Observations Dashboard  
 -The bar chart shows that the majority of the users through the time period analyzed were born in the 1970s, 1980s, and 1990s. The box and whisker chart shows these cohorts in the upper hinge and upper whisker, confirming the data.  
+
 -The 2000 cohort has very few trips overall, which makes sense because they were too young to take full advantage of the bikes during the 2013-2020 time frame. The interesting thing is that for all 3 gender designations, the 2000 cohort has the highest average duration as seen in the highlight table. Were they using the bikes for commute vs recreation? Again the box and whisker chart confirms with the purple marker for the 2000 cohort at the very top of each data range.  
+
 -One other interesting phenomenon that the box and whisker chart shows - for those identifying as either male or female, the average number of minutes per trip is tightly clustered range on either side of 20 min so while the number of trips varies per cohort, the length of those trips has less difference.  
 
 # Station Maps Dashboard  
@@ -46,6 +48,9 @@ I chose to use data from June of each year, 2013-2020, to analyze year over year
 The storyboard was written as a presentation for a meeting of the Citi Bike stakeholders. It presents the data analysis in the framework of potential areas that can be explored to increase overall bike usage and stakeholder revenue. Suggested areas highlighted:  
 
 -The usage dropped in June of 2020 yet the trip duration increased substantially over the 2019 average. More in depth analysis for cause of this change could show a change in user profile and reveal areas that can be promoted in new marketing materials.  
+
 -Customers vs subscribers shows the beginning of a change from subscribers dominating to a more even split with non-subscribers. What are the best ways to convert those occasional riders to subscribers?  
+
 -The station maps show an expansion of coverage area from 2013-2020. Further research to determine potential markets beyond the current coverage area could lead to increased revenue by moving into new, and potentially underserved markets.  
+
 -Noted differences in usage between the genders reveals a potential to increase revenue through increasing usage by those identifying as female. Further research is needed to find the cause for their lower trip    
