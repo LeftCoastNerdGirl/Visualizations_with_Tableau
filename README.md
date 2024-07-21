@@ -18,7 +18,34 @@ For this project, the students used Tableau as the data visualization tool. The 
 -Which bikes (by ID) are most likely due for repair or inspection in the timespan?  
 -How variable is the utilization by bike ID?  
 
+# Data download  
+I chose to use data from June of each year, 2013-2020, to analyze year over year trends from the beginning of the program. I felt this out give insight about what worked, what didn’t, how the program has grown in popularity, and potential areas for increased revenue. The data is through 2020 because the more recent data does not include some of the attributes I wanted to explore such as age, gender, and year of birth.  
 
+# Data cleanup  
+-Imported all files into Tableau and used the union function to combine them into a single source.  
+-Renamed the titles to make them more standardized (Bike ID vs bikeid, etc).  
+-Used the split function to separate the year and month from the table name column.  
+-Grouped the birth years into 10 year cohorts.  
+-Created day of week, hour, and year dimensions.  
+-Converted bike ID, end station ID, start station ID, birth year, and gendernum from measure to dimensions.  
 
+# Calculations:  
+-Number of minutes per trip as the seconds in the trip duration column multiplied by 60.  
+-Used an if/then calculation to create a gender column as male/female/unknown instead of numbers.  
+-Average trip duration as number of minutes divided by number of trips.  
 
-<div class='tableauPlaceholder' id='viz1721602799917' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mo&#47;Module8Challenge-CitiBikeAnalysisv5&#47;LetTheDataGuideUs&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Module8Challenge-CitiBikeAnalysisv5&#47;LetTheDataGuideUs' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mo&#47;Module8Challenge-CitiBikeAnalysisv5&#47;LetTheDataGuideUs&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1721602799917');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1016px';vizElement.style.height='1014px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+# Cohort Based Observations Dashboard  
+-The bar chart shows that the majority of the users through the time period analyzed were born in the 1970s, 1980s, and 1990s. The box and whisker chart shows these cohorts in the upper hinge and upper whisker, confirming the data.  
+-The 2000 cohort has very few trips overall, which makes sense because they were too young to take full advantage of the bikes during the 2013-2020 time frame. The interesting thing is that for all 3 gender designations, the 2000 cohort has the highest average duration as seen in the highlight table. Were they using the bikes for commute vs recreation? Again the box and whisker chart confirms with the purple marker for the 2000 cohort at the very top of each data range.  
+-One other interesting phenomenon that the box and whisker chart shows - for those identifying as either male or female, the average number of minutes per trip is tightly clustered range on either side of 20 min so while the number of trips varies per cohort, the length of those trips has less difference.  
+
+# Station Maps Dashboard  
+-The animation is a neat way to watch the number of stations increase over the time period as the service area moves both north and east. It also shows how the number of trips has increased year of year as indicated by the increase in size and depth of color.  
+
+# Storyboard Analysis
+The storyboard was written as a presentation for a meeting of the Citi Bike stakeholders. It presents the data analysis in the framework of potential areas that can be explored to increase overall bike usage and stakeholder revenue. Suggested areas highlighted:  
+
+-The usage dropped in June of 2020 yet the trip duration increased substantially over the 2019 average. More in depth analysis for cause of this change could show a change in user profile and reveal areas that can be promoted in new marketing materials.  
+-Customers vs subscribers shows the beginning of a change from subscribers dominating to a more even split with non-subscribers. What are the best ways to convert those occasional riders to subscribers?  
+-The station maps show an expansion of coverage area from 2013-2020. Further research to determine potential markets beyond the current coverage area could lead to increased revenue by moving into new, and potentially underserved markets.  
+-Noted differences in usage between the genders reveals a potential to increase revenue through increasing usage by those identifying as female. Further research is needed to find the cause for their lower trip    
